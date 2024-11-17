@@ -6,11 +6,13 @@
 /*   By: abosc <abosc@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 23:37:36 by abosc             #+#    #+#             */
-/*   Updated: 2024/11/17 23:39:34 by abosc            ###   ########.fr       */
+/*   Updated: 2024/11/17 23:42:07 by abosc            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP
 # define PUSH_SWAP
+
+# include "libft/libft.h"
 
 #endif
