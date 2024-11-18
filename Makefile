@@ -13,7 +13,7 @@ SRCS = $(addprefix $(LIBFT), ft_isalnum.c ft_isalpha.c ft_isascii.c\
 	ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_lstadd_back_bonus.c\
 	ft_lstadd_front_bonus.c ft_lstclear_bonus.c ft_lstdelone_bonus.c\
 	ft_lstiter_bonus.c ft_lstlast_bonus.c ft_lstmap_bonus.c ft_lstnew_bonus.c\
-	ft_lstsize_bonus.c ft_printf)
+	ft_lstsize_bonus.c ft_printf.c ft_print_hex.c ft_print_numbers.c ft_print_pointers.c ft_print_unsigned.c)
 
 
 SRCS_UTILS = $(addprefix $(UTILS), swapFunctions.c rotateFunctions.c revRotateFunctions.c pushFunctions.c cmpFunctions.c)
