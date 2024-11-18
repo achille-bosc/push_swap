@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   cmpFunctions.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alegrix <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: abosc <abosc@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 01:21:56 by alegrix           #+#    #+#             */
-/*   Updated: 2024/11/18 01:35:05 by alegrix          ###   ########.fr       */
+/*   Updated: 2024/11/18 01:38:17 by abosc            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../push_swap.h"
 
 int	fstSupSec(t_list **lst)
 {
