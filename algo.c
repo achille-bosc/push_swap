@@ -6,7 +6,7 @@
 /*   By: alegrix <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 01:16:05 by alegrix           #+#    #+#             */
-/*   Updated: 2024/11/18 02:25:56 by alegrix          ###   ########.fr       */
+/*   Updated: 2024/11/18 22:17:06 by alegrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,31 +17,17 @@ void	algo(t_list **a, t_list **b)
 	while (ft_lstsize(*a) > 1)
 	{
 		if (fst_sup_sec(*a) == 1)
-		{
-			ft_printf("sa");
-			swap_a(a);
-		}
-		ft_printf("pb");
-		push_b(a, b);
+			swap(a, 'a');
+		push(a, b, 'b');
 		if (fst_sup_sec(*b) == 0)
-		{
-			ft_printf("sb\n");
-			swap_b(b);
-		}
+			swap(b, 'b');
 	}
 	while (ft_lstsize(*b) > 0)
 	{
 		if (fst_sup_sec(*b) == 0)
-		{
-			ft_printf("sb");
-			swap_a(b);
-		}
-		ft_printf("pa");
-		push_b(b, a);
+			swap(b, 'b');
+		push(b, a, 'a');
 		if (fst_sup_sec(*a) == 1)
-		{
-			ft_printf("sb\n");
-			swap_b(a);
-		}
+			swap(a, 'a');
 	}
 }
