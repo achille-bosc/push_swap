@@ -4,6 +4,7 @@
         "*.page-template": "vue",
         "*.layout-template": "vue",
         "*.vue": "vue",
-        "push_swap.h": "c"
+        "push_swap.h": "c",
+        "libft.h": "c"
     }
 }
