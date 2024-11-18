@@ -16,7 +16,7 @@ SRCS = $(addprefix $(LIBFT), ft_isalnum.c ft_isalpha.c ft_isascii.c\
 	ft_lstsize_bonus.c)
 
 
-SRCS_UTILS = $(addprefix $(UTILS), swapFiles.c 2.c 3.c)
+SRCS_UTILS = $(addprefix $(UTILS), swapFunctions.c rotateFunctions.c revRotateFunctions.c pushFunctions.c cmpFunctions.c)
 
 SRCS_PSWAP = 
 
