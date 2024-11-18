@@ -6,7 +6,7 @@
 /*   By: abosc <abosc@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 01:43:12 by abosc             #+#    #+#             */
-/*   Updated: 2024/11/18 23:47:25 by abosc            ###   ########.fr       */
+/*   Updated: 2024/11/18 23:57:06 by abosc            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,19 +36,19 @@ int	main(int argc, char **argv)
 	t_list	*lst_a;
 	t_list	*lst_b;
 	t_list	*temps;
-	int 	value;
+	int 	*value;
 	lst_a = ft_lstnew(argv[1]);
 	int i;
 	i = 2;
 	ft_printf("%i", argc);
 	while (i < argc)
 	{
-		value = ft_atoi(argv[i]);
+		*value = ft_atoi(argv[i]);
 		temps = ft_lstnew(value);
 		lst_a->next = temps;
 		lst_a = temps;
 		i++;
-	}
+	}  
 	algo(&lst_a, &lst_b);
 	return (0);
 }
