@@ -6,7 +6,7 @@
 /*   By: abosc <abosc@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 23:24:04 by abosc             #+#    #+#             */
-/*   Updated: 2024/11/18 02:54:45 by alegrix          ###   ########.fr       */
+/*   Updated: 2024/11/18 22:30:35 by alegrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,14 @@ void	swap(t_list **lst, char x)
 	if (ft_lstsize(*lst) < 2)
 		return ;
 	new = ft_lstnew((*lst)->content);
-	ft_lstdelone(lst, free);
+	ft_lstdelone(*lst, free);
 	new->next = (*lst)->next;
 	(*lst)->next = new;
 }
 
 void	double_swap(t_list **lst_a, t_list **lst_b)
 {
-	swap_a(lst_a);
-	swap_b(lst_b);
+	swap(lst_a, 'x');
+	swap(lst_b, 'x');
 	ft_printf("ss\n");
 }

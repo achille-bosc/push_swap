@@ -6,7 +6,7 @@
 /*   By: abosc <abosc@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 23:33:56 by abosc             #+#    #+#             */
-/*   Updated: 2024/11/18 02:51:38 by alegrix          ###   ########.fr       */
+/*   Updated: 2024/11/18 22:33:37 by alegrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ void	push(t_list **first, t_list **second, char x)
 	if (ft_lstsize(*first) == 0)
 		return ;
 	new_m = ft_lstnew((*first)->content);
-	ft_delone(*first, free);
+	ft_lstdelone(*first, free);
 	ft_lstadd_front(second, new_m);
 }

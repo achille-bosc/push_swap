@@ -6,7 +6,7 @@
 /*   By: abosc <abosc@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 00:24:28 by alegrix           #+#    #+#             */
-/*   Updated: 2024/11/18 02:52:10 by alegrix          ###   ########.fr       */
+/*   Updated: 2024/11/18 22:31:58 by alegrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ void	rotate(t_list **lst, char x)
 		ft_printf("ra\n");
 	else if (x == 'b')
 		ft_printf("rb\n");
-	if (ft_lstsize <= 1)
+	if (ft_lstsize(*lst) <= 1)
 		return ;
 	new = ft_lstnew(*lst)->content;
-	ft_delone(*lst, free);
-	ft_addback(lst, new);
+	ft_lstdelone(*lst, free);
+	ft_lstadd_back(lst, new);
 }
 
 void	double_rotate(t_list **first, t_list **second)
