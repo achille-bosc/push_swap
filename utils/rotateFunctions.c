@@ -6,7 +6,7 @@
 /*   By: abosc <abosc@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 00:24:28 by alegrix           #+#    #+#             */
-/*   Updated: 2024/11/18 01:32:42 by abosc            ###   ########.fr       */
+/*   Updated: 2024/11/18 02:04:59 by abosc            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	rotate(t_list **lst)
 
 	if ((*lst)->content == NULL || (*lst)->next->content == NULL)
 		return ;
-	new->content = (*lst)->content;
+	new = ft_lstnew(*lst)->content;
 	ft_delone(*lst, free);
 	ft_addback(lst, new);
 }

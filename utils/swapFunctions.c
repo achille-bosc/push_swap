@@ -6,7 +6,7 @@
 /*   By: abosc <abosc@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 23:24:04 by abosc             #+#    #+#             */
-/*   Updated: 2024/11/18 01:32:58 by abosc            ###   ########.fr       */
+/*   Updated: 2024/11/18 02:05:38 by abosc            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,10 @@
 
 void	swap(t_list **lst)
 {
-	int		a;
 	t_list	*new;
 
-	a = (*lst)->content;
+	new = ft_lstnew((*lst)->content);
 	ft_lstdelone(lst, free);
-	new = ft_lstnew(a);
 	new->next = (*lst)->next;
 	(*lst)->next = new;
 }
