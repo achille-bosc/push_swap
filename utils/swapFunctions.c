@@ -6,27 +6,31 @@
 /*   By: abosc <abosc@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 23:24:04 by abosc             #+#    #+#             */
-/*   Updated: 2024/11/18 02:15:01 by abosc            ###   ########.fr       */
+/*   Updated: 2024/11/18 02:54:45 by alegrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	swap(t_list **lst, char col)
+void	swap(t_list **lst, char x)
 {
 	t_list	*new;
 
+	if (x == 'a')
+		ft_printf("sa\n");
+	else if (x == 'b')
+		ft_printf("sb\n");
+	if (ft_lstsize(*lst) < 2)
+		return ;
 	new = ft_lstnew((*lst)->content);
 	ft_lstdelone(lst, free);
 	new->next = (*lst)->next;
 	(*lst)->next = new;
-	if (col == 'a')
-		
 }
 
 void	double_swap(t_list **lst_a, t_list **lst_b)
 {
 	swap_a(lst_a);
 	swap_b(lst_b);
-	ft_printf("ss");
+	ft_printf("ss\n");
 }
