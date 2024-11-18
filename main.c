@@ -6,7 +6,7 @@
 /*   By: abosc <abosc@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 01:43:12 by abosc             #+#    #+#             */
-/*   Updated: 2024/11/18 22:20:51 by abosc            ###   ########.fr       */
+/*   Updated: 2024/11/18 22:35:51 by abosc            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	main(int argc, char **argv)
 	i = 2;
 	while (i < argc)
 	{
-		temps = ft_lstnew(argv[i]);
+		temps = ft_lstnew(ft_atoi(argv[i]));
 		lst_a->next = temps;
 		lst_a = temps;
 		i++;
