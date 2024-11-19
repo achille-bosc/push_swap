@@ -6,7 +6,7 @@
 /*   By: abosc <abosc@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 23:37:36 by abosc             #+#    #+#             */
-/*   Updated: 2024/11/18 22:24:47 by abosc            ###   ########.fr       */
+/*   Updated: 2024/11/19 02:28:50 by alegrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,6 @@ void	rotate(t_list **lst, char x);
 void	double_rotate(t_list **first, t_list **second);
 void	swap(t_list **lst, char x);
 void	double_swap(t_list **lst_a, t_list **lst_b);
+t_list  *ft_lstnew_int(int content);
+void    ft_lstprint(t_list *liste);
 #endif
