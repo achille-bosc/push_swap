@@ -68,7 +68,7 @@ int	main(int argc, char **argv)
 	i = 1;
 	lst_a = ft_lstnew_int(ft_atoi(argv[i]));
 	i++;
-	lst_b = ft_lstnew(NULL);
+	lst_b = NULL;
 	while (i < argc)
 	{
 		value = ft_atoi(argv[i]);
